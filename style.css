@@ -20,7 +20,6 @@
     padding:0;
 }
 main{
-    /* background-color: lightblue; */
     background-image: url(assets/bg.png);
 }
 header{
@@ -246,7 +245,7 @@ letter-spacing: 0%;
     border-radius: 50%;
     padding: 40px;
 }
-#story{
+/* #story{
     background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 .story-card-container{
@@ -258,13 +257,13 @@ letter-spacing: 0%;
    
 }
 .story-box img{
+    width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
 .story-box{
     border-radius: 16px;
     background: rgb(255, 255, 255);
-
 }
 #span-one{
     
@@ -281,7 +280,7 @@ letter-spacing: 0%;
 }
 .padding-title{
     /* padding: 40px 68px 38px 38px; */
-    margin: 40px 68px 38px 38px;
+    /* margin: 40px 68px 38px 38px;
 
 }
 .padding-description{
@@ -290,21 +289,93 @@ letter-spacing: 0%;
 .blue{
     border-radius: 47.93px;
     background: rgb(60, 216, 232);
-    color: rgb(255, 255, 255);
-    font-family: Raleway;
-    font-size: 15.34px;
-    font-weight: 500;
-    line-height: 28.76px;
-    letter-spacing: 0%;
-    text-align: left;
-    text-transform: capitalize;
-    border: none;
-    padding: 16px;
+}
+.green{
+    border-radius: 47.93px;
+    background: rgb(149, 178, 38);
+   
+}
+.royal-blue{
+    border-radius: 47.93px;
+    background: rgb(93, 88, 240);
 }
 .story-btn{
     position: relative;
     top: -5%;
     left: 10%;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    border: none;
+    padding: 16px;
+} */ 
+ .right-left-icons{
+    margin-bottom: 60px;
+ }
+ /* story */
+#story{
+    border-top: 1px dashed rgb(128, 128, 128);
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+#story .curriculum-title{
+    margin-top: 60px;
+}
+.story-container{
+    max-width: 1146px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 19px;
+}
+.story-card{
+    border-radius: 16px;
+background: rgb(255, 255, 255);
+max-width: 540px;
+}
+.story-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+
+background: url(),rgb(217, 217, 217);
+}
+.story-card h3 , h4 , p{
+    padding: 20px 10px 20px 20px;
+}
+.story-card button{
+display: block;
+}
+.story-btn{
+    color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 1rem;
+font-weight: 500;
+letter-spacing: 0%;
+text-align: left;
+text-transform: capitalize;
+border: none;
+    padding: 10px;
+    border-radius: 47.93px;
+    position: relative;
+    top: -5%;
+    left: 5%;
+}
+.paste{
+    background: rgb(60, 216, 232);
+    position: relative;
+    top: -3%;
+}
+.green{
+    background: rgb(149, 178, 38);
+}
+.blue{
+    background: rgb(93, 88, 240);
+}
+#span-one{
+    grid-row: span 2;
 }
 @media screen and (max-width: 576px) {
     header{
@@ -329,5 +400,29 @@ letter-spacing: 0%;
     .banner-content ,.banner-content .banner-title , .banner-content .banner-des{
         text-align: center;
     }
-    
+    #story{
+        border-top: none;
+    }
+    /* #story{
+    }
+    .story-container{
+        padding: 0;
+    }
+    .story-card-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .story-box{
+        max-width: 100%;
+    }
+    #span-one , .right-left-icons{
+        display: none;
+    }
+    .story-btn{
+        padding: 10;
+        font-size: 0.8rem;
+    } */
 }
